@@ -1,7 +1,7 @@
 # Test for Storefront register and deregister
 
 1. npm i
-2. configure DOS.json as Desktop Owner Settings
+2. configure dos.json as Desktop Owner Settings
 3. npm run start
 4. launch fin://localhost:8081/app.json
 
