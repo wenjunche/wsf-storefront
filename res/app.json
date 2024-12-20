@@ -1,0 +1,16 @@
+{
+    "runtime": {
+        "arguments": "--v=1",
+        "version": "29.108.73.19"
+    },
+    "platform": {
+        "uuid": "openfin-wsf-storefront",
+        "icon": "{APP_ROOT_URL}/favicon.ico",
+        "autoShow": true,
+        "providerUrl": "{APP_ROOT_URL}/index.html",
+        "permissions": {}
+    },
+    "snapshot": {
+        "windows": []
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "applicationSettings" : {
+        "openFinWorkspace" : {
+            "permissions" : {
+                "System" : {
+                    "launchExternalProcess" : false,
+                    "openUrlWithBrowser" : {
+                        "enabled" : true
+                    }
+                }
+            },
+            "urls" : [
+                "https://cdn.openfin.co/*"
+            ]
+        }
+    },
+    "desktopSettings" : {
+        "applicationLogging" : {
+            "maxAppLogFileSizeMB" : 10,
+            "maxAppLogFiles" : 30
+        },
+        "securedAPIDefaultPermission" : "prompt",
+        "systemApps" : {
+            "workspace" : {
+                "assetsUrl" : "https://cdn.openfin.co/release",
+                "customConfig" : {
+                    "flags" : {
+                        "SentryEnabled" : false
+                    },
+                    "hotkeys" : {
+                        "toggleHomeVisibility" : "Alt+Space"
+                    }
+                },
+                "version" : "11.0.10"
+            }
+        }
+    }
+}

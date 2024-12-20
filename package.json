@@ -1,0 +1,54 @@
+{
+    "name": "workspace-simple",
+    "version": "1.1.0",
+    "description": "A simple OpenFin workspace application",
+    "main": "./index.js",
+    "types": "./types/index.d.ts",
+    "scripts": {
+        "clean": "rimraf ./dist",
+        "build": "npm run clean && tsc && npx webpack --env mode=development",
+        "deploy:npm": "cd dist && npm publish",
+        "deploy": "npm run deploy:npm",
+        "start": "webpack-dev-server --env mode=development"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wenjunche/wsf-storefront"
+    },
+    "author": "support@openfin.co",
+    "license": "MIT",
+    "homepage": "https://github.com/wenjunche/wsf-storefront#readme",
+    "dependencies": {
+        "@openfin/workspace": "11.0.10",
+        "@openfin/workspace-platform": "11.0.10",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@openfin/core": "29.73.19",
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.14.0",
+        "@typescript-eslint/parser": "^5.14.0",
+        "copy-webpack-plugin": "^10.2.4",
+        "copyfiles": "^2.4.1",
+        "css-loader": "^6.7.1",
+        "eslint": "^8.10.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^16.1.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-unused-imports": "^2.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "javascript-obfuscator": "^4.0.0",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "style-loader": "^3.3.1",
+        "ts-loader": "^9.2.6",
+        "typescript": "^5.4.2",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^6.0.1",
+        "webpack-dev-server": "^5.2.0"
+    }
+}
